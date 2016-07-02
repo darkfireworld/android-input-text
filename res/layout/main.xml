@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    <com.example.et.InputText
+            android:hint="无限制输入框 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <com.example.et.InputText
+            android:hint="长度限制10(ASCII算一个, 其他字符算两个 ) "
+            custom:max_length="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    <com.example.et.InputText
+            android:hint="只能输入整数 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:input_mode="integer"/>
+    <com.example.et.InputText
+            android:hint="只能输入ASCII(128位ASCII)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:input_mode="ascii"/>
+    <com.example.et.InputText
+            android:hint="只能输入常用字符(BMP0)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:input_mode="bmp0"/>
+    <com.example.et.InputText
+            android:hint="带删除的无限制输入框 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:auto_clear_img="@drawable/delete"/>
+</LinearLayout>
+
